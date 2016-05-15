@@ -27,4 +27,10 @@
   }
 
   window.Reminder = Reminder;
+
+  window.onload = function(){
+    document.querySelector('body').innerHTML = '我们已相恋'
+    + Reminder().all+'('+Reminder().days+'天)';
+  }
+
 })(window);
