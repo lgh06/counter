@@ -15,7 +15,7 @@
     //天数 或者 除去 年月 的天数
     var oD = moment(end).diff(moment(start).add(months,'months'),'days');
 
-    var all = (years?(years+'年'):'') + (oM?(oM+'月'):'') + (oD?(oD+'天'):'');
+    var all = (years?(years+'年 '):'') + (oM?(oM+'个月 '):'') + (oD?(oD+'天'):'');
 
     return {
       days:days,

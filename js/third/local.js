@@ -22,7 +22,7 @@
 
   local.clear = function(not){
     if(typeof not === 'string' || typeof not === 'undefined'){
-      window.localStorage 
+      window.localStorage
       ?
       Object.keys(window.localStorage).forEach(function(v,i,a){
         if( v !== not){
