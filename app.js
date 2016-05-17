@@ -29,8 +29,28 @@
   window.Reminder = Reminder;
 
   window.onload = function(){
-    document.querySelector('body').innerHTML = '我们已相恋'+'<br>'
+    document.querySelector('#remind').innerHTML = '我们已相恋'+'<br>'
     + Reminder().all+'<br>('+Reminder().days+'天)';
+
+
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Vue.js!'
+      }
+    });
+
+
+
+
+
   }
+
+
+
+
+
+
+
 
 })(window);
